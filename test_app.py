@@ -251,7 +251,7 @@ async def test_add_shelter_handler_success(cli):
         "petsAvailable": 123
     }''')
     # Assert
-    assert resp.status == 409
+    assert resp.status == 201
 
 
 async def test_add_shelter_handler_already_exists_error(cli):
