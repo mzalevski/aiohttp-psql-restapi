@@ -9,6 +9,10 @@
 
 ### API is not prone to SQL injection due to use of parameterized queries
 
+### you might want to add the following to the docker-compose.yaml for development
+
+`volumes: - ./app:/usr/src/app`
+
 ### API docs
 
 GET /pets (?type=dog, ?shelterId=bd09b2f0-c274-11e9-963b-6b7b4dc28ba0)

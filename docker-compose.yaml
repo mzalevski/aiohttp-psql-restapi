@@ -11,8 +11,6 @@ services:
 
   api-service:
     build: ./app
-    volumes:
-      - ./app:/usr/src/app
     ports:
       - 8888:8000
     depends_on:

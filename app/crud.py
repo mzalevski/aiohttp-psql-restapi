@@ -1,18 +1,20 @@
-import psycopg2
+import psycopg2, os
+
+test = "test_app.py" in os.listdir(os.path.abspath('.'))
 
 async def get_connection():
 
-    if __name__ == "__main__":
+    if test:
         connection = psycopg2.connect(user="postgres",
                                   password="mysecretpassword",
-                                      host="db-service",
+                                      host="localhost",
                                       port="5432",
                                   database="postgres")
 
     else:
         connection = psycopg2.connect(user="postgres",
                                   password="mysecretpassword",
-                                      host="localhost",
+                                      host="db-service",
                                       port="5432",
                                   database="postgres")
 
