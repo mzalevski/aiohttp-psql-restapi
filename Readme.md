@@ -1,19 +1,27 @@
 # **Indoorway rekrutacja**
 
-### run `docker-compose up` to run the api + db
+## run `docker-compose up` to start the api & db
 
-### to run tests:
+### to run tests
+
 1. run `pip install aiohttp pytest pytest-aiohttp`
-2. ensure that the application is running
+2. ensure that the api & db are running
 3. run `pytest`
 
-#### API is not prone to SQL injection due to use of parameterized queries
+***
 
-### you might want to add the following to the docker-compose.yaml for development
+#### API is not prone to SQL injection attacks due to use of parameterized queries
 
-`volumes: - ./app:/usr/src/app`
+#### You might want to add the following directive to the docker-compose.yaml for development
 
-### API docs
+```docker
+volumes:
+    - ./app:/usr/src/app
+```
+
+***
+
+## API docs
 
 GET /pets (?type=dog, ?shelterId=bd09b2f0-c274-11e9-963b-6b7b4dc28ba0)
 pobranie listy zwierząt z opcją filtrowania po polach “type” oraz “shelterId”
