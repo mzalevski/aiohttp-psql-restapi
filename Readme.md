@@ -2,6 +2,8 @@
 
 ## run `docker-compose up` to start the api & db
 
+### API is exposed on port 8888, so you should be able to look into it on localhost:8888
+
 ### to run tests
 
 1. run `pip install aiohttp pytest pytest-aiohttp`
