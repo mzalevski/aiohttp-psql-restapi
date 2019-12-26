@@ -1,8 +1,8 @@
-#**Indoorway rekrutacja**
+**Indoorway rekrutacja**
 
-#####run `docker-compose up` to run the api + db
+## run `docker-compose up` to run the api + db
 
-#####to run tests:
+## to run tests:
 1. run `pip install aiohttp pytest pytest-aiohttp`
 2. ensure that the application is running
 3. run `pytest`
