@@ -1,13 +1,13 @@
-#**Indoorway rekrutacja**
+# **Indoorway rekrutacja**
 
-#####run `docker-compose up` to run the api + db
+### run `docker-compose up` to run the api + db
 
-#####to run tests:
+### to run tests:
 1. run `pip install aiohttp pytest pytest-aiohttp`
 2. ensure that the application is running
 3. run `pytest`
 
-### API is not prone to SQL injection due to use of parameterized queries
+#### API is not prone to SQL injection due to use of parameterized queries
 
 ### you might want to add the following to the docker-compose.yaml for development
 
